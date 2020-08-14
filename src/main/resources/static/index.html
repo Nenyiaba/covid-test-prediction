@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Covid Prediction</title>
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="index.css">
+	<script src="jquery.js"></script>
+	<script src="bootstrap.js"></script>
+	<script src="index.js"></script>
+</head>
+<body>
+	<h1>Project Title: Detecting the need for Covid-19 test for an individual using Machine Learning..</h1>
+	<div>
+		<div class="row">
+			<div class="col-sm-6">
+				<span style="font-size: 40px">Questions</span>
+			</div>
+			<div class="col-sm-6">
+				<span style="font-size: 30px">Result: </span>
+				<span id="prediction-result" style="font-size: 30px"> - </span>
+			</div>
+		</div>
+		<div id="questions-container">
+			<div class="question-case">
+				<p class="question-text">1. Do you have pneumonia?</p>
+				<div class="question-options">
+					<input type="radio" id="q-1-yes" name="q-1" value="1">
+					<label for="q-1-yes">Yes</label><br>
+					<input type="radio" id="q-1-no" name="q-1" value="0">
+					<label for="q-1-no">No</label><br>
+				</div>
+			</div>
+
+			<div class="question-case">
+				<p class="question-text">2. Do you have diabetes?</p>
+				<div class="question-options">
+					<input type="radio" id="q-2-yes" name="q-2" value="1">
+					<label for="q-2-yes">Yes</label><br>
+					<input type="radio" id="q-2-no" name="q-2" value="0">
+					<label for="q-2-no">No</label><br>
+				</div>
+			</div>
+
+			<div class="question-case">
+				<p class="question-text">3. Do you have difficulty in breathing?</p>
+				<div class="question-options">
+					<input type="radio" id="q-3-yes" name="q-3" value="1">
+					<label for="q-3-yes">Yes</label><br>
+					<input type="radio" id="q-3-no" name="q-3" value="0">
+					<label for="q-3-no">No</label><br>
+				</div>
+			</div>
+
+			<div class="question-case">
+				<p class="question-text">4. Do you have asthma?</p>
+				<div class="question-options">
+					<input type="radio" id="q-4-yes" name="q-4" value="1">
+					<label for="q-4-yes">Yes</label><br>
+					<input type="radio" id="q-4-no" name="q-4" value="0">
+					<label for="q-4-no">No</label><br>
+				</div>
+			</div>
+
+			<div class="question-case">
+				<p class="question-text">5. Are you hypertensive?</p>
+				<div class="question-options">
+					<input type="radio" id="q-5-yes" name="q-5" value="1">
+					<label for="q-5-yes">Yes</label><br>
+					<input type="radio" id="q-5-no" name="q-5" value="0">
+					<label for="q-5-no">No</label><br>
+				</div>
+			</div>
+
+			<div class="question-case">
+				<p class="question-text">6. Do you have other communicable disease?</p>
+				<div class="question-options">
+					<input type="radio" id="q-6-yes" name="q-6" value="1">
+					<label for="q-6-yes">Yes</label><br>
+					<input type="radio" id="q-6-no" name="q-6" value="0">
+					<label for="q-6-no">No</label><br>
+				</div>
+			</div>
+
+			<div class="question-case">
+				<p class="question-text">7. Do you have stroke?</p>
+				<div class="question-options">
+					<input type="radio" id="q-7-yes" name="q-7" value="1">
+					<label for="q-7-yes">Yes</label><br>
+					<input type="radio" id="q-7-no" name="q-7" value="0">
+					<label for="q-7-no">No</label><br>
+				</div>
+			</div>
+
+			<div class="question-case">
+				<p class="question-text">8. Are you obese?</p>
+				<div class="question-options">
+					<input type="radio" id="q-8-yes" name="q-8" value="1">
+					<label for="q-8-yes">Yes</label><br>
+					<input type="radio" id="q-8-no" name="q-8" value="0">
+					<label for="q-8-no">No</label><br>
+				</div>
+			</div>
+
+			<div class="question-case">
+				<p class="question-text">9. Do you have kidney failure?</p>
+				<div class="question-options">
+					<input type="radio" id="q-9-yes" name="q-9" value="1">
+					<label for="q-9-yes">Yes</label><br>
+					<input type="radio" id="q-9-no" name="q-9" value="0">
+					<label for="q-9-no">No</label><br>
+				</div>
+			</div>
+
+			<div class="question-case">
+				<p class="question-text">10. Are you a smoker?</p>
+				<div class="question-options">
+					<input type="radio" id="q-10-yes" name="q-10" value="1">
+					<label for="q-10-yes">Yes</label><br>
+					<input type="radio" id="q-10-no" name="q-10" value="0">
+					<label for="q-10-no">No</label><br>
+				</div>
+			</div>
+			<br>
+			<button id="submit-button">SUBMIT</button>
+		</div>
+
+	</div>
+
+</body>
+</html>
